@@ -1,0 +1,20 @@
+
+header h1{
+  color:rgb(175, 42, 186);
+  font-family: sans-serif;
+}
+
+main h1{
+  color:rgb(233, 105, 65);
+  font-family: sans-serif;
+}
+
+footer h1{
+  color:rgb(30, 98, 221);
+  font-family: sans-serif;
+}
+
+p{
+  font-family: sans-serif;
+  color:rgb(38, 38, 38); 
+}

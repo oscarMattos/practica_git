@@ -1,0 +1,17 @@
+commit 8590fc02783ff64582cafe68d7a0134154538e04
+Author: Oscar Marcelo Mattos Zarandón <mattoszarandonoscar@gmail.com>
+Date:   Fri Apr 21 10:57:50 2017 -0300
+
+    Puse secciones del html con sus nombres y agregue estilos para los titulos
+
+commit d1816dd1ff02ec6d5d74b886579a8f320aaa94df
+Author: Oscar Marcelo Mattos Zarandón <mattoszarandonoscar@gmail.com>
+Date:   Fri Apr 21 10:30:32 2017 -0300
+
+    Secciones del HTML armadas
+
+commit 0e4c89a1b1ef68e4c2093c149388d81ea70e24ab
+Author: Oscar Marcelo Mattos Zarandón <mattoszarandonoscar@gmail.com>
+Date:   Fri Apr 21 10:27:50 2017 -0300
+
+    Primer commit de practica
