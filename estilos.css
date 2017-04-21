@@ -9,6 +9,7 @@ button{
   background: rgb(28, 175, 222);
   color:rgba(255, 255, 255, .87);
   border: 0;
+  padding: 8px;
 }
 
 header h1{

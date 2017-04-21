@@ -1,0 +1,35 @@
+commit 4935cbe52aa652eef866f3b5e7979258dbe02e1a
+Author: Oscar Marcelo Mattos Zarandón <mattoszarandonoscar@gmail.com>
+Date:   Fri Apr 21 12:18:43 2017 -0300
+
+    Se agregaron botones para cada seccion
+
+commit 77aaa77b581f7e5e3aedf18312130fcdf1be4c4d
+Author: Oscar Marcelo Mattos Zarandón <mattoszarandonoscar@gmail.com>
+Date:   Fri Apr 21 11:54:16 2017 -0300
+
+    arreglo de los colores de background en los tags html
+
+commit 0d4ec56d640903794b6be490215290809d7d1310
+Author: Oscar Marcelo Mattos Zarandón <mattoszarandonoscar@gmail.com>
+Date:   Fri Apr 21 11:52:19 2017 -0300
+
+    primer commit de la rama test
+
+commit a7dccb9d3f9f2f5e707b041e75a42db2eab0959c
+Author: Oscar Marcelo Mattos Zarandón <mattoszarandonoscar@gmail.com>
+Date:   Fri Apr 21 11:25:49 2017 -0300
+
+    Agregado de etiqueta h1 a los titulos, agregado a los parrafos y de archivo commits.txt
+
+commit d1816dd1ff02ec6d5d74b886579a8f320aaa94df
+Author: Oscar Marcelo Mattos Zarandón <mattoszarandonoscar@gmail.com>
+Date:   Fri Apr 21 10:30:32 2017 -0300
+
+    Secciones del HTML armadas
+
+commit 0e4c89a1b1ef68e4c2093c149388d81ea70e24ab
+Author: Oscar Marcelo Mattos Zarandón <mattoszarandonoscar@gmail.com>
+Date:   Fri Apr 21 10:27:50 2017 -0300
+
+    Primer commit de practica
