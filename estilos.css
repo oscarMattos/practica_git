@@ -15,6 +15,7 @@ button{
   color:rgba(255, 255, 255, .87);
   border: 0;
   padding: 8px;
+  cursor: pointer;
 }
 
 header, main, footer{
