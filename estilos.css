@@ -20,6 +20,10 @@ header, main, footer{
   padding: 16px;
 }
 
+h1{
+  text-transform: uppercase;
+}
+
 header h1{
   color:rgb(175, 42, 186);
   font-family: sans-serif;
