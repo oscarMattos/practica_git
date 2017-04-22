@@ -16,6 +16,11 @@ button{
   border: 0;
   padding: 8px;
   cursor: pointer;
+  transition: 1s;
+}
+
+button{
+  background:rgb(108, 209, 43);
 }
 
 header, main, footer{
