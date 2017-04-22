@@ -19,7 +19,7 @@ button{
   transition: 1s;
 }
 
-button{
+button:hover{
   background:rgb(108, 209, 43);
 }
 
@@ -31,6 +31,12 @@ h1{
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 200;
+}
+
+h2{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
 }
 
 header h1{
