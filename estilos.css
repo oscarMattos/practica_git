@@ -22,6 +22,8 @@ header, main, footer{
 
 h1{
   text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 200;
 }
 
 header h1{
