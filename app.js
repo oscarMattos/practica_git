@@ -1,15 +1,37 @@
-var estado = true;
-function boxShadowToggle(){
-  if(estado){
-    document.getElementById("main").classList.add("boxShadow");
-    document.getElementById("main_button").innerHTML = "remove box shadow";
-    estado = false;
-  }
-  else{
-    document.getElementById("main").classList.remove("boxShadow");
-    document.getElementById("main_button").innerHTML = "add box shadow";
-    estado = true;
+
+var estadoBoxShadow = true;
+var estadoBoxSizing = true;
+
+function boxShadowToggle() {
+  let main = document.querySelector("#main");
+  let buttonMain = document.querySelector("#main_button");
+  if (estadoBoxShadow) {
+    main.style.transition = ".5s";
+    main.classList.add("boxShadow");
+    buttonMain.innerHTML = "remove box shadow";
+    estadoBoxShadow = false;
+  } else {
+    main.classList.remove("boxShadow");
+    buttonMain.innerHTML = "add box shadow";
+    estadoBoxShadow = true;
   }
 }
 
-document.getElementById("main_button").addEventListener("click", boxShadowToggle);
+document.querySelector("#main_button").addEventListener("click", boxShadowToggle);
+
+function boxSizingToggle() {
+  let header = document.querySelector("#header");
+  let buttonHeader = document.querySelector("#header_button");
+  if (estadoBoxSizing) {
+    header.style.width = "50%";
+    header.style.transition = "1s";
+    buttonHeader.innerHTML = "expand box";
+    estadoBoxSizing = false;
+  } else {
+    header.style.width = "100%";
+    buttonHeader.innerHTML = "reduce box";
+    estadoBoxSizing = true;
+  }
+}
+
+document.querySelector("#header_button").addEventListener("click", boxSizingToggle);
