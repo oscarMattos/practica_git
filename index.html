@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,45 +8,53 @@
   <link rel="stylesheet" href="estilos.css">
   <title>Practica git</title>
 </head>
+
 <body>
 
-  <header id="header">
-    <h1>Cabecera</h1>
-    <h2>Subtítulo</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, dolorem.
-      Nemo omnis, voluptas, delectus praesentium, minima facilis saepe ea magnam
-      non explicabo suscipit minus doloribus qui aspernatur id necessitatibus quod.
-     </p>
-     <button type="button" name="button" id="header_button">reduce box</button>
-  </header>
+  <button type="button" name="button" id="openNav">open nav</button>
+  <div id="darkBackground"></div>
+  <nav id="sideNav">
+    <button type="button" name="button" id="closeNav">close</button>
+    <ul>
+      <li><a href="#">link1</a></li>
+      <li><a href="#">link2</a></li>
+      <li><a href="#">link3</a></li>
+      <li><a href="#">link4</a></li>
+    </ul>
+</nav>
 
-  <main id="main">
-    <h1>Sección principal</h1>
-    <h2>Subtítulo</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, dolorem.
-      Nemo omnis, voluptas, delectus praesentium, minima facilis saepe ea magnam
-      non explicabo suscipit minus doloribus qui aspernatur id necessitatibus quod.
-     </p>
-     <button type="button" name="button" id="main_button">add box shadow</button>
-     <article>
-       <p>
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid laborum omnis ullam, temporibus quas laudantium commodi qui, earum magnam laboriosam saepe inventore, obcaecati. Ipsa, repudiandae vero corporis culpa, tempore adipisci?
-       </p>
-     </article>
-  </main>
+  <div class="container">
 
-  <footer>
-    <h1>Pie de página</h1>
-    <h2>Subtítulo</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, dolorem.
-      Nemo omnis, voluptas, delectus praesentium, minima facilis saepe ea magnam
-      non explicabo suscipit minus doloribus qui aspernatur id necessitatibus quod.
-     </p>
-     <button type="button" name="button">footer</button>
-  </footer>
+    <header id="header">
+      <h1>Cabecera</h1>
+      <h2>Subtítulo</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, dolorem. Nemo omnis, voluptas, delectus praesentium, minima facilis saepe ea magnam non explicabo suscipit minus doloribus qui aspernatur id necessitatibus quod.
+      </p>
+      <button type="button" name="button" id="header_button">reduce box</button>
+    </header>
+
+    <main id="main">
+      <h1>Sección principal</h1>
+      <h2>Subtítulo</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, dolorem. Nemo omnis, voluptas, delectus praesentium, minima facilis saepe ea magnam non explicabo suscipit minus doloribus qui aspernatur id necessitatibus quod.
+      </p>
+      <button type="button" name="button" id="main_button">add box shadow</button>
+    </main>
+
+    <footer>
+      <h1>Pie de página</h1>
+      <h2>Subtítulo</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, dolorem. Nemo omnis, voluptas, delectus praesentium, minima facilis saepe ea magnam non explicabo suscipit minus doloribus qui aspernatur id necessitatibus quod.
+      </p>
+      <button type="button" name="button">footer</button>
+    </footer>
+
+  </div>
+
   <script src="app.js" charset="utf-8"></script>
 </body>
+
 </html>
