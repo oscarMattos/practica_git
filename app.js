@@ -2,6 +2,7 @@
 // Variables globales
 var stateBoxShadow = true;
 var stateBoxSizing = true;
+var stateChipImg = true;
 
 // Funcion para hacer box-shadow
 function boxShadowToggle() {
@@ -108,3 +109,23 @@ window.onload = function(){
   moveSkillsCss();
   moveSkillsJs();
 }
+
+// funcion para hacer que la imagen del chip vaya al otro lado
+
+function slideChipImg(){
+  let img = document.querySelector(".img_chip");
+  if(stateChipImg){
+    img.style.float = "right";
+    img.style.margin = "0 -25px 0 10px";
+    img.style.transition = ".5s";
+    img.style.backgroundColor = "#f44336";
+    stateChipImg = false;
+  } else {
+    img.style.float = "left";
+    img.style.margin = "0 10px 0 -25px";
+    img.style.backgroundColor = "#2196F3";
+    stateChipImg = true;
+  }
+}
+
+document.querySelector(".img_chip").addEventListener("click", slideChipImg);

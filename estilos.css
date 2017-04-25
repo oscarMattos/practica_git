@@ -21,20 +21,17 @@
   left: 16px;
 }
 
-nav{
+#sideNav{
   position: fixed;
   box-shadow: 0px 2px 4px #888888;
-  position: absolute;
   width: 0;
   height: 100%;
   background: rgb(244, 244, 244);
-  position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
 }
 
 #closeNav{
@@ -44,25 +41,26 @@ nav{
   right: 16px;
 }
 
-nav ul{
+#sideNav ul{
+  position: relative;
   padding-left: 16px;
   padding-right: 16px;
+  margin: 60px 0;
 }
 
-nav ul li:not(:last-child){
+#sideNav ul li:not(:last-child){
   padding-bottom: 16px;
 }
 
-nav ul li a{
+#sideNav ul li a{
   display: inline-block;
   width: 100%;
   font-family: sans-serif;
   color: rgb(50, 50, 50);
-  width: 100%;
   transition: .3s;
 }
 
-nav ul li a:hover{
+#sideNav ul li a:hover{
   color: rgb(29, 151, 221);
 }
 
@@ -164,3 +162,29 @@ p{
 .html {width: 0%; background-color: #4CAF50; border-radius: 16px;}
 .css {width: 0%; background-color: #2196F3; border-radius: 16px;}
 .js {width: 0%; background-color: #f44336; border-radius: 16px;}
+
+/* ------------------------- */
+#chips{
+  margin-bottom: 16px;
+}
+
+.chip {
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.img_chip {
+    background-color: #2196F3;
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
