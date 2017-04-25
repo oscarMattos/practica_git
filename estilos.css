@@ -22,7 +22,7 @@
 }
 
 nav{
-  position: relative;
+  position: fixed;
   box-shadow: 0px 2px 4px #888888;
   position: absolute;
   width: 0;
@@ -59,7 +59,7 @@ nav ul li a{
   font-family: sans-serif;
   color: rgb(50, 50, 50);
   width: 100%;
-  transition: .5s;
+  transition: .3s;
 }
 
 nav ul li a:hover{
@@ -140,3 +140,27 @@ footer h1{
 p{
   color:rgb(38, 38, 38);
 }
+/* -------------------------- */
+#skills{
+  margin-bottom: 16px;
+}
+
+.container_skills {
+    width: 100%;
+    background-color: #ddd;
+    margin-bottom: 16px;
+    border-radius: 16px;
+}
+
+.skills {
+    font-family: sans-serif;
+    text-align: right;
+    padding-right: 16px;
+    line-height: 32px;
+    height: 32px;
+    color: white;
+}
+
+.html {width: 0%; background-color: #4CAF50; border-radius: 16px;}
+.css {width: 0%; background-color: #2196F3; border-radius: 16px;}
+.js {width: 0%; background-color: #f44336; border-radius: 16px;}

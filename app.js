@@ -58,3 +58,53 @@ function closeNav() {
 }
 
 document.querySelector("#closeNav").addEventListener("click", closeNav);
+
+// funcion para cargar las barras de los skills cuando carga la página
+function moveSkillsHtml() {
+    let elem = document.querySelector(".skills.html");
+    let width = 0;
+    let id = setInterval(frame, 25);
+    function frame() {
+        if (width >= 90) {
+            clearInterval(id);
+        } else {
+            width++;
+            elem.style.width = width + '%';
+            elem.innerHTML = width * 1 + '%';
+        }
+    }
+}
+function moveSkillsCss() {
+    let elem = document.querySelector(".skills.css");
+    let width = 0;
+    let id = setInterval(frame, 25);
+    function frame() {
+        if (width >= 85) {
+            clearInterval(id);
+        } else {
+            width++;
+            elem.style.width = width + '%';
+            elem.innerHTML = width * 1 + '%';
+        }
+    }
+}
+function moveSkillsJs() {
+    let elem = document.querySelector(".skills.js");
+    let width = 0;
+    let id = setInterval(frame, 25);
+    function frame() {
+        if (width >= 75) {
+            clearInterval(id);
+        } else {
+            width++;
+            elem.style.width = width + '%';
+            elem.innerHTML = width * 1 + '%';
+        }
+    }
+}
+
+window.onload = function(){
+  moveSkillsHtml();
+  moveSkillsCss();
+  moveSkillsJs();
+}
