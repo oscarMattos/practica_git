@@ -3,6 +3,7 @@
 var stateBoxShadow = true;
 var stateBoxSizing = true;
 var stateChipImg = true;
+var stateSearchInput = true;
 
 // Funcion para hacer box-shadow
 function boxShadowToggle() {
@@ -129,3 +130,23 @@ function slideChipImg(){
 }
 
 document.querySelector(".img_chip").addEventListener("click", slideChipImg);
+
+// funcion para hacer que el input search tenga un ancho de 100%
+
+function slideInputSearch(){
+  let iconSearch = document.querySelector("#icon_search");
+  let searchInput = document.querySelector("#input_search");
+  if (stateSearchInput) {
+    searchInput.style.transition = ".5s";
+    searchInput.style.width = "100%";
+    searchInput.style.padding = "0 16px 0 60px";
+    searchInput.focus();
+    stateSearchInput = false;
+  } else {
+    searchInput.style.transition = ".5s";
+    searchInput.style.width = "50px";
+    searchInput.style.padding = "0";
+    stateSearchInput = true;
+  }
+}
+document.querySelector("#icon_search").addEventListener("click", slideInputSearch);
