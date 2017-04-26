@@ -44,78 +44,53 @@ document.querySelector("#header_button").addEventListener("click", boxSizingTogg
 // Funciones para abrir y cerrar la navegacion lateral
 
 function openNav() {
-    let sideNav = document.querySelector("#sideNav");
-    let darkBackground = document.querySelector("#darkBackground");
-    sideNav.style.width = "250px";
-    darkBackground.style.display = "block";
+  let sideNav = document.querySelector("#sideNav");
+  let darkBackground = document.querySelector("#darkBackground");
+  sideNav.style.width = "250px";
+  darkBackground.style.display = "block";
 }
 
 document.querySelector("#openNav").addEventListener("click", openNav);
 
 function closeNav() {
-    let sideNav = document.querySelector("#sideNav");
-    let darkBackground = document.querySelector("#darkBackground");
-    sideNav.style.width = "0";
-    darkBackground.style.display = "none";
+  let sideNav = document.querySelector("#sideNav");
+  let darkBackground = document.querySelector("#darkBackground");
+  sideNav.style.width = "0";
+  darkBackground.style.display = "none";
 }
 
 document.querySelector("#closeNav").addEventListener("click", closeNav);
 
 // funcion para cargar las barras de los skills cuando carga la página
-function moveSkillsHtml() {
-    let elem = document.querySelector(".skills.html");
-    let width = 0;
-    let id = setInterval(frame, 25);
-    function frame() {
-        if (width >= 90) {
-            clearInterval(id);
-        } else {
-            width++;
-            elem.style.width = width + '%';
-            elem.innerHTML = width * 1 + '%';
-        }
+
+function animateSkill(skill, percentage) {
+  let elem = document.querySelector(skill);
+  let width = 0;
+  let id = setInterval(frame, 25);
+
+  function frame() {
+    if (width >= percentage) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+      elem.innerHTML = width * 1 + '%';
     }
-}
-function moveSkillsCss() {
-    let elem = document.querySelector(".skills.css");
-    let width = 0;
-    let id = setInterval(frame, 25);
-    function frame() {
-        if (width >= 85) {
-            clearInterval(id);
-        } else {
-            width++;
-            elem.style.width = width + '%';
-            elem.innerHTML = width * 1 + '%';
-        }
-    }
-}
-function moveSkillsJs() {
-    let elem = document.querySelector(".skills.js");
-    let width = 0;
-    let id = setInterval(frame, 25);
-    function frame() {
-        if (width >= 75) {
-            clearInterval(id);
-        } else {
-            width++;
-            elem.style.width = width + '%';
-            elem.innerHTML = width * 1 + '%';
-        }
-    }
+  }
 }
 
-window.onload = function(){
-  moveSkillsHtml();
-  moveSkillsCss();
-  moveSkillsJs();
+
+window.onload = function() {
+  animateSkill(".skills.html", 90);
+  animateSkill(".skills.css", 85);
+  animateSkill(".skills.js", 75);
 }
 
 // funcion para hacer que la imagen del chip vaya al otro lado
 
-function slideChipImg(){
+function slideChipImg() {
   let img = document.querySelector(".img_chip");
-  if(stateChipImg){
+  if (stateChipImg) {
     img.style.float = "right";
     img.style.margin = "0 -25px 0 10px";
     img.style.transition = ".5s";
@@ -133,7 +108,7 @@ document.querySelector(".img_chip").addEventListener("click", slideChipImg);
 
 // funcion para hacer que el input search tenga un ancho de 100%
 
-function slideInputSearch(){
+function slideInputSearch() {
   let iconSearch = document.querySelector("#icon_search");
   let searchInput = document.querySelector("#input_search");
   if (stateSearchInput) {
