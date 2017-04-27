@@ -1,4 +1,3 @@
-
 // Variables globales
 var stateBoxShadow = true;
 var stateBoxSizing = true;
@@ -79,7 +78,6 @@ function animateSkill(skill, percentage) {
   }
 }
 
-
 window.onload = function() {
   animateSkill(".skills.html", 90);
   animateSkill(".skills.css", 85);
@@ -115,12 +113,15 @@ function slideInputSearch() {
     searchInput.style.transition = ".5s";
     searchInput.style.width = "100%";
     searchInput.style.padding = "0 16px 0 60px";
+    iconSearch.style.backgroundColor = "#f44336";
+    iconSearch.style.transition = "1s";
     searchInput.focus();
     stateSearchInput = false;
   } else {
     searchInput.style.transition = ".5s";
     searchInput.style.width = "50px";
     searchInput.style.padding = "0";
+    iconSearch.style.backgroundColor = "#2196F3";
     stateSearchInput = true;
   }
 }
