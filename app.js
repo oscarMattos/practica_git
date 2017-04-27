@@ -9,7 +9,7 @@ function boxShadowToggle() {
   let main = document.querySelector("#main");
   let buttonMain = document.querySelector("#main_button");
   if (stateBoxShadow) {
-    main.style.transition = ".5s";
+    main.setAttribute("style", "transition: .5s;");
     main.classList.add("boxShadow");
     buttonMain.innerHTML = "remove box shadow";
     stateBoxShadow = false;
@@ -27,12 +27,11 @@ function boxSizingToggle() {
   let header = document.querySelector("#header");
   let buttonHeader = document.querySelector("#header_button");
   if (stateBoxSizing) {
-    header.style.width = "50%";
-    header.style.transition = "1s";
+    header.setAttribute("style", "transition: 1s; width: 50%;");
     buttonHeader.innerHTML = "expand box";
     stateBoxSizing = false;
   } else {
-    header.style.width = "100%";
+    header.setAttribute("style", "transition: 1s; width: 100%;");
     buttonHeader.innerHTML = "reduce box";
     stateBoxSizing = true;
   }
@@ -89,15 +88,10 @@ window.onload = function() {
 function slideChipImg() {
   let img = document.querySelector(".img_chip");
   if (stateChipImg) {
-    img.style.float = "right";
-    img.style.margin = "0 -25px 0 10px";
-    img.style.transition = ".5s";
-    img.style.backgroundColor = "#f44336";
+    img.setAttribute("style", "float: right; margin: 0 -25px 0 10px; transition: .5s; background-color: #f44336;");
     stateChipImg = false;
   } else {
-    img.style.float = "left";
-    img.style.margin = "0 10px 0 -25px";
-    img.style.backgroundColor = "#2196F3";
+    img.setAttribute("style", "float: left; margin: 0 10px 0 -25px; transition: .5s; background-color: #2196F3;")
     stateChipImg = true;
   }
 }
@@ -110,18 +104,13 @@ function slideInputSearch() {
   let iconSearch = document.querySelector("#icon_search");
   let searchInput = document.querySelector("#input_search");
   if (stateSearchInput) {
-    searchInput.style.transition = ".5s";
-    searchInput.style.width = "100%";
-    searchInput.style.padding = "0 16px 0 60px";
-    iconSearch.style.backgroundColor = "#f44336";
-    iconSearch.style.transition = "1s";
+    iconSearch.setAttribute("style", "background-color: #f44336;");
+    searchInput.setAttribute("style","transition: .5s; width: 100%; padding: 0 16px 0 60px;");
     searchInput.focus();
     stateSearchInput = false;
   } else {
-    searchInput.style.transition = ".5s";
-    searchInput.style.width = "50px";
-    searchInput.style.padding = "0";
-    iconSearch.style.backgroundColor = "#2196F3";
+    iconSearch.setAttribute("style", "background-color: #2196F3;");
+    searchInput.setAttribute("style", "transition:.5s; width: 50px; padding: 0;")
     stateSearchInput = true;
   }
 }
